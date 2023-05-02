@@ -3,6 +3,8 @@ table 65001 "BK Promotion Setup"
     DataClassification = CustomerContent;
 
     Caption = 'Promotion Setup';
+    DrillDownPageId = "BK Promotion List";
+    LookupPageId = "BK Promotion List";
 
 
     fields

@@ -1,17 +1,22 @@
-page 65003 "BK Promotion Card"
+page 65002 "BK Promotion List"
 
 {
-    PageType = Document;
+    PageType = List;
     UsageCategory = Lists;
     ApplicationArea = All;
     SourceTable = "BK Promotion";
-    Caption = 'BK Promotion Card';
+    Caption = 'Promotions';
+    CardPageID = "BK Promotion Card";
+    Editable = false;
+
+    // please set LookupPageID and DrillDownPageID equal to this page on the source table definition.
+
 
     layout
     {
         area(content)
         {
-            group(promotion)
+            repeater(promotion)
             {
 
 
@@ -29,11 +34,6 @@ page 65003 "BK Promotion Card"
                     ApplicationArea = All;
                 }
             }
-
-
-
         }
     }
-    // Add to the OnNewRecord trigger the code which will copy the “Default Promotion Code” field value into the “Promotion Code” field on creating the new record.
-
 }
