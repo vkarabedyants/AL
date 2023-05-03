@@ -34,7 +34,7 @@ page 65001 "BK Promotion Setup"
         }
 
     }
-
+    /// Triggers when the page is opened. ??? 
     trigger OnOpenPage()
     begin
         rec.Reset();
