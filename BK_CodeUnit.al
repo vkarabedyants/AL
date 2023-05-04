@@ -40,7 +40,6 @@ codeunit 65001 "BK Promotion Mgt."
 
 
 
-
 codeunit 65002 "BK Apply Prom. Discount"
 {
 
