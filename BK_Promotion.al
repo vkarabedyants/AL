@@ -3,6 +3,8 @@ table 65000 "BK Promotion"
     DataClassification = CustomerContent;
 
     Caption = 'Promotion';
+    ObsoleteState = Pending;
+    ObsoleteReason = 'Table is being replaced by a new promotion management system.';
 
     fields
     {
@@ -26,7 +28,7 @@ table 65000 "BK Promotion"
     {
         key(PK; Code)
         {
-            Clustered = true;
+
         }
 
     }

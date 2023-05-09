@@ -1,26 +1,33 @@
-page 65003 "BK Promotion Card"
+page 65005 "ListPart for Promotion Line"
 
 {
-    PageType = Document;
+    PageType = ListPart;
     UsageCategory = Lists;
     ApplicationArea = All;
-    SourceTable = "BK Promotion";
-    Caption = 'BK Promotion Card';
+    SourceTable = "BK Promotion Line";
+    Caption = 'ListPart for Line';
+
+    // Editable = false;
 
     layout
     {
         area(content)
         {
-            group(promotion)
+            repeater(General)
             {
 
 
-                field("Code"; rec.Code)
+                field("Promotion Code"; rec."Promotion Code")
                 {
                     ApplicationArea = All;
                 }
 
-                field("Description"; rec.Description)
+
+                field("Line No."; rec."Line No.")
+                {
+                    ApplicationArea = All;
+                }
+                field("Item No."; rec."Item No.")
                 {
                     ApplicationArea = All;
                 }
@@ -29,11 +36,6 @@ page 65003 "BK Promotion Card"
                     ApplicationArea = All;
                 }
             }
-
-
-
         }
     }
-    // Add to the OnNewRecord trigger the code which will copy the “Default Promotion Code” field value into the “Promotion Code” field on creating the new record.
-
 }

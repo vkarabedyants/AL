@@ -8,6 +8,8 @@ page 65002 "BK Promotion List"
     Caption = 'Promotions';
     CardPageID = "BK Promotion Card";
     Editable = false;
+    ObsoleteState = Pending;
+    ObsoleteReason = 'Page is being replaced by a new promotion management system.';
 
     // please set LookupPageID and DrillDownPageID equal to this page on the source table definition.
 
