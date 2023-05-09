@@ -30,6 +30,13 @@ page 65004 "List for Promotions Header"
                     ApplicationArea = All;
                 }
 
+                // Add to the “BK Promotion Header” table and pages the “BK Promotion Type” field of the “BK Promotion Type” enum type
+
+                field("Promotion Type"; rec."Promotion Type")
+                {
+                    ApplicationArea = All;
+                }
+
             }
         }
     }

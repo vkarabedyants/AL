@@ -14,6 +14,13 @@ table 65003 "BK Promotion Header"
             DataClassification = CustomerContent;
         }
 
+
+        // Add to the “BK Promotion Header” table and pages the “BK Promotion Type” field of the “BK Promotion Type” enum type
+        field(3; "Promotion Type"; Enum "BK Promotion Type")
+        {
+            DataClassification = CustomerContent;
+        }
+
     }
 
     keys
